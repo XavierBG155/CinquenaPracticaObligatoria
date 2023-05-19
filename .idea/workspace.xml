@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CinquenaPracticaObligatoria.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Huffman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HuffmanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LZW.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LZWTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RLE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RLETest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
+    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="NO HAY MANERA">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LZW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LZW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RLE.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +39,17 @@
       <recent name="C:\Users\berga\Desktop\java\intellij projectes\CinquenaPracticaObligatoria\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RLETest.compress">
+    <configuration name="LZWTest.compress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CinquenaPracticaObligatoria" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LZWTest" />
+      <option name="METHOD_NAME" value="compress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RLETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CinquenaPracticaObligatoria" />
       <option name="PACKAGE_NAME" value="" />
@@ -59,9 +59,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RLETest.compress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CinquenaPracticaObligatoria" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RLETest" />
+      <option name="METHOD_NAME" value="compress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RLETest.compress" />
         <item itemvalue="JUnit.RLETest" />
+        <item itemvalue="JUnit.LZWTest.compress" />
       </list>
     </recent_temporary>
   </component>
@@ -74,6 +86,14 @@
       <option name="presentableId" value="Default" />
       <updated>1684158379734</updated>
     </task>
+    <task id="LOCAL-00001" summary="NO HAY MANERA">
+      <created>1684430736179</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684430736179</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,20 +107,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RLE.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RLETest.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="NO HAY MANERA" />
+    <option name="LAST_COMMIT_MESSAGE" value="NO HAY MANERA" />
   </component>
 </project>
