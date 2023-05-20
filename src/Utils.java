@@ -6,7 +6,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 public class Utils {
-    public static final String directory = "C:\\Users\\berga\\Pictures\\";
+    public static final String directory = "C:\\Users\\xavie\\Pictures\\";
     public static final String testFile = "im.bmp";
 
     public static  String md5(File f) throws Exception {

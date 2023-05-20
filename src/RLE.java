@@ -6,29 +6,27 @@ public class RLE {
     public static void compress(InputStream is, OutputStream os) {
         try {
             int comptador = 0;
-            byte[] arIs = is.readAllBytes();
+            byte[] arBytes = is.readAllBytes();
             byte anterior = 0;
-            for (int i = 0; i < arIs.length; i++) {
-                byte actual = arIs[i];
-                boolean esRepeteix = false;
-                if (anterior == actual){
-                    esRepeteix = true;
-                }
-                if (esRepeteix) {
-                    while (esRepeteix){
-                        actual = arIs[i];
-                        comptador++;
-                        if (actual != anterior){
-                            esRepeteix = false;
-                        }
+            for (int i = 0; i < arBytes.length; i++) {
+                byte actual = arBytes[i];
+                boolean estaRepetit = false;
+                if (anterior == actual) {
+                    estaRepetit = true;
+                }else os.write(actual);
+                if (estaRepetit) {
+                    os.write(anterior);
+                    while (estaRepetit) {
                         i++;
+                        comptador++;
+                        actual = arBytes[i];
+                        if (actual != anterior) estaRepetit = false;
+                        anterior = actual;
                     }
                     os.write(comptador);
-                } else {
-                    os.write(actual);
                 }
                 anterior = actual;
-                System.out.println(comptador);
+
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
