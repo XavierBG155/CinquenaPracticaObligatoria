@@ -6,27 +6,36 @@ public class RLE {
     public static void compress(InputStream is, OutputStream os) {
         try {
             int comptador = 0;
-            byte[] arBytes = is.readAllBytes();
+            byte[] arIs = is.readAllBytes();
             byte anterior = 0;
-            for (int i = 0; i < arBytes.length; i++) {
-                byte actual = arBytes[i];
-                boolean estaRepetit = false;
-                if (anterior == actual) {
-                    estaRepetit = true;
-                }else os.write(actual);
-                if (estaRepetit) {
-                    os.write(anterior);
-                    while (estaRepetit) {
-                        i++;
-                        comptador++;
-                        actual = arBytes[i];
-                        if (actual != anterior) estaRepetit = false;
-                        anterior = actual;
+            for (int i = 0; i < arIs.length; i++) {
+                byte actual = arIs[i];
+                boolean igualAnterior = false;
+
+                if (actual == anterior) {
+                    igualAnterior = true;
+                }
+
+                if (i == 0) {
+                    os.write(actual);
+                } else {
+                    if (!igualAnterior) {
+                        os.write(actual);
+                    } else {
+                        while (igualAnterior && i+1 < arIs.length) {
+                            i++;
+                            comptador++;
+                            actual = arIs[i];
+                            if (actual != anterior) {
+                                igualAnterior = false;
+                            }
+                            anterior = actual;
+                        }
+                        os.write(anterior);
+                        os.write(comptador);
                     }
-                    os.write(comptador);
                 }
                 anterior = actual;
-
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
