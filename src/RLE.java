@@ -16,24 +16,22 @@ public class RLE {
                     igualAnterior = true;
                 }
 
-                if (i == 0) {
+                if (i == 0 || !igualAnterior) {
                     os.write(actual);
-                } else {
-                    if (!igualAnterior) {
-                        os.write(actual);
-                    } else {
-                        while (igualAnterior && i+1 < arIs.length) {
-                            i++;
-                            comptador++;
-                            actual = arIs[i];
-                            if (actual != anterior) {
-                                igualAnterior = false;
-                            }
-                            anterior = actual;
-                        }
-                        os.write(anterior);
-                        os.write(comptador);
+                }else {
+                    while (igualAnterior && i + 1 < arIs.length) {
+                        actual = arIs[i+1];
+                        if (actual != anterior) {
+                            igualAnterior = false;
+                            os.write(anterior);
+                            os.write(comptador);
+                        } else comptador++;
+                        /*i++;*/
                     }
+                    anterior = actual;
+                    os.write(anterior);
+                    os.write(comptador);
+
                 }
                 anterior = actual;
             }
