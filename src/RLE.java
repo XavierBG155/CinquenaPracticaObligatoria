@@ -7,33 +7,49 @@ public class RLE {
         try {
             int comptador = 0;
             byte[] arIs = is.readAllBytes();
-            byte anterior = 0;
+            boolean igualAnterior = false;
             for (int i = 0; i < arIs.length; i++) {
                 byte actual = arIs[i];
-                boolean igualAnterior = false;
 
-                if (actual == anterior) {
-                    igualAnterior = true;
-                }
-
-                if (i == 0 || !igualAnterior) {
+                if (i == 0){
                     os.write(actual);
-                }else {
-                    while (igualAnterior && i + 1 < arIs.length) {
-                        actual = arIs[i+1];
-                        if (actual != anterior) {
-                            igualAnterior = false;
-                            os.write(anterior);
-                            os.write(comptador);
-                        } else comptador++;
-                        /*i++;*/
-                    }
-                    anterior = actual;
-                    os.write(anterior);
-                    os.write(comptador);
-
+                    continue;
                 }
-                anterior = actual;
+                byte anterior = arIs[i-1];
+
+                //si el comptador arriba a 255, escriurem 255, tornarem comptador a 0 i escriurem el nombre actual
+                if (comptador == 255){
+                    os.write(comptador);
+                    comptador = 0;
+                    os.write(actual);
+                    igualAnterior = false;
+                    continue;
+                }
+                // Miram si el booleà igualAnterior es true i si el nombre actual es el mateix que teniem.
+                //En cas verdader, sumarem comptador
+                if (igualAnterior && anterior == actual){
+                comptador++;
+                continue;
+                //si no son iguals l'anterior i l'actual, escriurem el que tinguem al comptador
+                    // el nombre actual, que ha de ser diferent a l'anterior
+                } else if (igualAnterior) {
+                    os.write(comptador);
+                    igualAnterior = false;
+                    os.write(actual);
+                    continue;
+                }
+
+                if (anterior == actual){
+                    os.write(actual);
+                    comptador = 0;
+                    igualAnterior = true;
+                }else os.write(actual);
+
+            }
+            //Aqui ens asegurem de que si acabem amb un nombre que es repeteix, escrivim el comptador,
+            //si no acabaria amb el darrer nombre dues vegades sense les repeticions
+            if (igualAnterior){
+                os.write(comptador);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
