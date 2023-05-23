@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="tres primers compress">
+    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="compress acabat (^///^)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RLE.java" afterDir="false" />
     </list>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684789129089</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="compress acabat (^///^)">
+      <created>1684795537337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684795537337</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NO HAY MANERA" />
     <MESSAGE value="tres primers compress" />
-    <option name="LAST_COMMIT_MESSAGE" value="tres primers compress" />
+    <MESSAGE value="compress acabat (^///^)" />
+    <option name="LAST_COMMIT_MESSAGE" value="compress acabat (^///^)" />
   </component>
 </project>

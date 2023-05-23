@@ -11,6 +11,7 @@ public class RLE {
             for (int i = 0; i < arIs.length; i++) {
                 byte actual = arIs[i];
 
+                //El primer sempre va directe a la sortida
                 if (i == 0){
                     os.write(actual);
                     continue;
@@ -39,6 +40,8 @@ public class RLE {
                     continue;
                 }
 
+                //Quan l'actual és igual que l'anterior, "activem" que és igual que l'anterior, reiniciem el comptador
+                // i escrivim l'actual ja que ho hem d'escriure dues vegades
                 if (anterior == actual){
                     os.write(actual);
                     comptador = 0;
