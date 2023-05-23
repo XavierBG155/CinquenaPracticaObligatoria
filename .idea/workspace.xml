@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="NO HAY MANERA">
+    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="compress acabat (^///^)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LZW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LZW.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RLE.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,33 +25,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/berga/Desktop/java/intellij projectes/CinquenaPracticaObligatoria/src&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/berga/Desktop/java/intellij projectes/CinquenaPracticaObligatoria/src",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\berga\Desktop\java\intellij projectes\CinquenaPracticaObligatoria\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RLETest.compress">
-    <configuration name="LZWTest.compress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CinquenaPracticaObligatoria" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LZWTest" />
-      <option name="METHOD_NAME" value="compress" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RLETest">
     <configuration name="RLETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CinquenaPracticaObligatoria" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,11 +62,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RLETest.decompress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CinquenaPracticaObligatoria" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RLETest" />
+      <option name="METHOD_NAME" value="decompress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RLETest.testFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CinquenaPracticaObligatoria" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RLETest" />
+      <option name="METHOD_NAME" value="testFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RLETest.compress" />
         <item itemvalue="JUnit.RLETest" />
-        <item itemvalue="JUnit.LZWTest.compress" />
+        <item itemvalue="JUnit.RLETest.decompress" />
+        <item itemvalue="JUnit.RLETest.testFile" />
+        <item itemvalue="JUnit.RLETest.compress" />
       </list>
     </recent_temporary>
   </component>
@@ -87,13 +101,34 @@
       <updated>1684158379734</updated>
     </task>
     <task id="LOCAL-00001" summary="NO HAY MANERA">
-      <created>1684430736179</created>
+      <created>1684581086509</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1684430736179</updated>
+      <updated>1684581086509</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tres primers compress">
+      <created>1684769742776</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684769742776</updated>
+    </task>
+    <task id="LOCAL-00003" summary="tres primers compress">
+      <created>1684789129089</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684789129089</updated>
+    </task>
+    <task id="LOCAL-00004" summary="compress acabat (^///^)">
+      <created>1684795537337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684795537337</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NO HAY MANERA" />
-    <option name="LAST_COMMIT_MESSAGE" value="NO HAY MANERA" />
+    <MESSAGE value="tres primers compress" />
+    <MESSAGE value="compress acabat (^///^)" />
+    <option name="LAST_COMMIT_MESSAGE" value="compress acabat (^///^)" />
   </component>
 </project>
