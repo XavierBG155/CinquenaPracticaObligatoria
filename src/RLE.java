@@ -60,6 +60,16 @@ public class RLE {
     }
 
     public static void decompress(InputStream is, OutputStream os) {
-
+        try {
+            byte[] arBytes = is.readAllBytes();
+            for (int i = 0; i < arBytes.length; i++) {
+                byte b = arBytes[i];
+            if (i == 0){
+                os.write(b);}
+            continue;
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
