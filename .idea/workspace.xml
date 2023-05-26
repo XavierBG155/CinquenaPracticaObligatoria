@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="un poc de descomprimir">
+    <list default="true" id="11103987-e6e5-4e46-9241-aff74794dbec" name="Changes" comment="un poc de lzw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LZW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LZW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684430736179</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="un poc de lzw">
+      <created>1685114815689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685114815689</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,7 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NO HAY MANERA" />
-    <option name="LAST_COMMIT_MESSAGE" value="NO HAY MANERA" />
+    <MESSAGE value="un poc de lzw" />
+    <option name="LAST_COMMIT_MESSAGE" value="un poc de lzw" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -43,7 +43,7 @@ public class LZW {
 
     private static int search(int c, List<Byte> dic, int index) {
         for (byte b : dic) {
-            if (c == b) return index + 1;
+            if (c == b) return index;
             index++;
         }
         return 0;
